@@ -1,0 +1,51 @@
+stages:
+- ios
+- android
+
+variables:
+    PROJECT: MotiusCommunityApp
+    SCHEME: MotiusCommunityApp
+
+
+# ---------------------------------------------------------------------------------------------- #
+# ------------------------------------------ iOS ----------------------------------------------- #
+# ---------------------------------------------------------------------------------------------- #
+
+ios:release:
+    stage: ios
+    script:
+    - fastlane ios release
+    only:
+    - tags
+    tags:
+    - iOS
+
+ios:beta:
+    stage: ios
+    script:
+    - fastlane ios beta
+    only:
+    - master
+    - develop
+    tags:
+    - iOS
+
+android:beta:
+    stage: android
+    script:
+    - fastlane android beta
+    only:
+    - master
+    - develop
+    tags:
+    - iOS
+
+
+android:release:
+    stage: android
+    script:
+    - fastlane android release
+    only:
+    - tags
+    tags:
+    - iOS

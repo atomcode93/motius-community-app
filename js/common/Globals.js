@@ -1,0 +1,5 @@
+module.exports = {
+  SLACK_HISTORY_CHANNEL: 'https://slack.com/api/channels.history?token=xoxp-179940535380-179891467378-179325583089-b9706fa95a79c48a51cf23f05981d3f6&channel=C59TNFSDS&pretty=1',
+  SLACK_USERS_LIST: 'https://slack.com/api/users.list?token=xoxp-179940535380-179891467378-179325583089-b9706fa95a79c48a51cf23f05981d3f6&pretty=1',
+  SLACK_TOKEN: 'xoxp-179940535380-179891467378-179325583089-b9706fa95a79c48a51cf23f05981d3f6'
+};
